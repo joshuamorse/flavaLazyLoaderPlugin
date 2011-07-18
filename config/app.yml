@@ -1,0 +1,4 @@
+all:
+  flava_lazy_loader:
+    loading_type: false
+    loading_prompt: '/flavaLazyLoaderPlugin/images/loading.gif'
