@@ -43,3 +43,20 @@ function lazy_load_url($url)
 
   echo $render;
 }
+
+/**
+ * render_lazy_load_image 
+ * 
+ * @param mixed $source 
+ * @access public
+ * @return void
+ */
+function render_lazy_load_image($source = null)
+{
+  if (!$source)
+  {
+    $source = sfConfig::get('app_flava_lazy_loader_loading_prompt');
+  }
+
+  return '<img src="' . $source . '" alt="Loading" title="Loading" />';
+}
