@@ -31,7 +31,7 @@ function lazy_load_url($url)
   {
     if (sfConfig::get('app_flava_lazy_loader_loading_type') == 'image')
     {
-      $render = render_lazy_load_image();
+      $render .= render_lazy_load_image();
     }
     else
     {
